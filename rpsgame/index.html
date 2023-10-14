@@ -114,7 +114,7 @@
     <div id="score">
       <p>Score: <span id="player-score">0</span> - <span id="computer-score">0</span></p>
     </div>
-    <button id="reset-button" onclick="resetGame()">Reset</button>
+    <button id="reset-button" onclick="resetGame()" disabled>Reset</button>
   </div>
 
   <script>
@@ -179,8 +179,8 @@
     }
 
     function endGame() {
+      buttons.forEach(button => (button.disabled = false));
       resetButton.style.display = 'block';
-      buttons.forEach(button => (button.disabled = true));
     }
 
     function resetGame() {
