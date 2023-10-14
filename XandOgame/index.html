@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="png/game.png" type="image/x-icon">
+    <title>X-O-Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1>X-O-Game</h1>
+        <div class="board" id="board">
+            <!-- Cells will be dynamically generated using JavaScript -->
+        </div>
+        <div class="info">
+            <div class="player-turn">
+                <span>Player's Turn: </span>
+                <span id="current-player">X</span>
+            </div>
+            <div class="game-status" id="game-status">
+                <!-- Game status will be displayed using JavaScript -->
+            </div>
+            <button id="reset-button">New Game</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
